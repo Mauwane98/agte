@@ -1,0 +1,50 @@
+.service-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-title {
+    color: #DBFB00;
+    background-color: #4C4C4C;
+    padding: 12px 24px;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.service-description {
+    padding: 24px;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #DBFB00;
+    color: #000000;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 24px 24px;
+}
+
+.read-more-btn:hover {
+    background-color: #c2e000;
+    transform: scale(1.05);
+}

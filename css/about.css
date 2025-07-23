@@ -1,0 +1,26 @@
+.about-section {
+    margin-bottom: 3rem; /* 48px */
+}
+
+.section-title {
+    color: #DBFB00;
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+    margin-bottom: 1.5rem; /* 24px */
+    border-bottom: 2px solid #DBFB00;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.section-content {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.8;
+}
+
+.section-content ul {
+    padding-left: 1.5rem;
+}
+
+.section-content li {
+    margin-bottom: 0.75rem;
+}

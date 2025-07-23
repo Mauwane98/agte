@@ -1,0 +1,82 @@
+/* --- Page Section Title --- */
+.page-section-title {
+    text-align: center;
+    font-size: 2.5rem; /* 40px */
+    font-weight: 700;
+    margin-bottom: 3rem; /* 48px */
+}
+
+.page-section-title.text-black {
+    color: #000000;
+}
+
+/* --- OHS Section --- */
+.section-title {
+    color: #DBFB00;
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.service-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.125rem; /* 18px */
+}
+
+.service-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #5a687c;
+}
+
+.service-list li:before {
+    content: '•';
+    color: #DBFB00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* --- Client Project Section --- */
+.client-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.client-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #4C4C4C;
+    margin-bottom: 1rem;
+}
+
+.client-project {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.scope-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4C4C4C;
+    margin-bottom: 1rem;
+}
+
+.scope-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.scope-list li {
+    margin-bottom: 0.5rem;
+}
+
+.client-logo-large {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}

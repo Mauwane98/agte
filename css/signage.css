@@ -1,0 +1,67 @@
+/* --- Page Section Title --- */
+.page-section-title {
+    text-align: center;
+    font-size: 2.5rem; /* 40px */
+    font-weight: 700;
+    margin-bottom: 3rem; /* 48px */
+}
+
+.page-section-title.text-black {
+    color: #000000;
+}
+
+/* --- Signage Card Styles --- */
+.signage-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.signage-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.signage-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.signage-card-title {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700;
+    color: #4C4C4C;
+    margin-bottom: 0.75rem;
+}
+
+.signage-card-text {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* --- Team in Action Gallery --- */
+.team-gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    /* This forces the container to be a perfect square */
+    aspect-ratio: 1 / 1;
+}
+
+.team-image {
+    width: 100%;
+    height: 100%;
+    /* This ensures the image fills the square container without distortion */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-gallery-item:hover .team-image {
+    transform: scale(1.05);
+}

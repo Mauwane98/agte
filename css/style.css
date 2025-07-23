@@ -1,0 +1,132 @@
+/* General Body Styles */
+body {
+    color: #000000; /* Black text as per original */
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #FFFFFF; /* White background */
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #4C4C4C; /* Original dark gray menu background */
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #DBFB00; /* Original bright yellow for hover/active */
+}
+
+/* --- Desktop Dropdown Menu --- */
+.dropdown-menu {
+    background-color: #999999;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: all 0.2s ease-out;
+    visibility: visible;
+}
+
+.dropdown-hidden {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+    visibility: hidden;
+}
+
+.sub-nav-link {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #FFFFFF;
+}
+
+.sub-nav-link:hover {
+    background-color: #8a8a8a; /* Slightly darker for hover */
+    color: #DBFB00;
+}
+
+/* --- Mobile Menu --- */
+#mobile-menu {
+    position: fixed;
+    top: 88px; /* Adjust this value to match your header's height */
+    left: 0;
+    right: 0;
+    z-index: 100; /* High z-index to ensure it's on top */
+    background-color: #4C4C4C;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+#mobile-menu.open {
+    max-height: 100vh; /* Animate to a height that fills the screen */
+}
+
+
+/* --- Service Card Styles --- */
+.service-card {
+    background-color: #4C4C4C; /* Using the dark gray for cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    border-bottom: 4px solid #DBFB00;
+}
+
+.service-card .p-6 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card-title {
+    color: #DBFB00;
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700;
+    margin-bottom: 0.75rem; /* 12px */
+}
+
+.service-card-text {
+    color: #FFFFFF; /* White text on dark cards */
+    margin-bottom: 1.5rem; /* 24px */
+    flex-grow: 1;
+}
+
+/* --- Read More Button --- */
+.read-more-btn {
+    display: inline-block;
+    background-color: #DBFB00;
+    color: #000000; /* Black text for contrast */
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #c2e000;
+    transform: scale(1.05);
+}
